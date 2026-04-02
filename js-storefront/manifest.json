@@ -14,7 +14,7 @@
       "csr": {
         "webroot": "dist/b2bspastore/browser/"
       },
-      "enabledRepositories": ["spartacus-dev"]
+      "enabledRepositories": ["spartacus-6-cdn"]
     }
   ],
   "nodeVersion": "22"
