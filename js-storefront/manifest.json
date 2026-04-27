@@ -3,6 +3,9 @@
     {
       "name": "spartacusstore",
       "path": "spartacusstore",
+      "ssr": {
+        "enabled": false
+      },
       "csr": {
         "webroot": "dist/spartacusstore/browser/"
       },
@@ -11,6 +14,9 @@
     {
       "name": "b2bspastore",
       "path": "b2bspastore",
+      "ssr": {
+        "enabled": false
+      },
       "csr": {
         "webroot": "dist/b2bspastore/browser/"
       },
