@@ -62,25 +62,17 @@ import { CartImportExportFeatureModule } from './features/cart/cart-import-expor
 import { OrderFeatureModule } from './features/order/order-feature.module';
 import { OrderDocumentFlowFeatureModule } from './features/order/order-document-flow-feature.module';
 import { CheckoutFeatureModule } from './features/checkout/checkout-feature.module';
-import { OpfFeatureModule } from './features/opf/opf-feature.module';
 import { PersonalizationFeatureModule } from './features/tracking/personalization-feature.module';
-import { PdfinvoicesModuleFeatureModule } from './features/pdf-invoices/pdfinvoices-module-feature.module';
-import { RequestedDeliveryDateModuleFeatureModule } from './features/requested-delivery-date/requested-delivery-date-module-feature.module';
-import { CustomerTicketingFeatureModule } from './features/customer-ticketing/customer-ticketing-feature.module';
 import { OrganizationUserRegistrationFeatureModule } from './features/organization/organization-user-registration-feature.module';
 import { OrganizationAdministrationFeatureModule } from './features/organization/organization-administration-feature.module';
 import { OrganizationAccountSummaryFeatureModule } from './features/organization/organization-account-summary-feature.module';
 import { OrganizationUnitOrderFeatureModule } from './features/organization/organization-unit-order-feature.module';
 import { OrganizationOrderApprovalFeatureModule } from './features/organization/organization-order-approval-feature.module';
+import { ProductConfiguratorFeatureModule } from './features/product-configurator/product-configurator-feature.module';
 import { StoreFinderFeatureModule } from './features/storefinder/store-finder-feature.module';
 import { AsmFeatureModule } from './features/asm/asm-feature.module';
 import { AsmCustomer360FeatureModule } from './features/asm/asm-customer360-feature.module';
 import { PunchoutFeatureModule } from './features/punchout/punchout-feature.module';
-import { S4ServiceFeatureModule } from './features/s4-service/s4-service-feature.module';
-import { S4omFeatureModule } from './features/s4om/s4om-feature.module';
-import { CdsFeatureModule } from './features/cds/cds-feature.module';
-import { CdpFeatureModule } from './features/cdp/cdp-feature.module';
-import { CdcFeatureModule } from './features/cdc/cdc-feature.module';
 import { SmartEditFeatureModule } from './features/smartedit/smart-edit-feature.module';
 import { ProductFutureStockFeatureModule } from './features/product/product-future-stock-feature.module';
 import { ProductVariantsFeatureModule } from './features/product/product-variants-feature.module';
@@ -148,25 +140,17 @@ import { ProductBulkPricingFeatureModule } from './features/product/product-bulk
     OrderFeatureModule,
     OrderDocumentFlowFeatureModule,
     CheckoutFeatureModule,
-    OpfFeatureModule,
     PersonalizationFeatureModule,
-    PdfinvoicesModuleFeatureModule,
-    RequestedDeliveryDateModuleFeatureModule,
-    CustomerTicketingFeatureModule,
     OrganizationUserRegistrationFeatureModule,
     OrganizationAdministrationFeatureModule,
     OrganizationAccountSummaryFeatureModule,
     OrganizationUnitOrderFeatureModule,
     OrganizationOrderApprovalFeatureModule,
+    ProductConfiguratorFeatureModule,
     StoreFinderFeatureModule,
     AsmFeatureModule,
     AsmCustomer360FeatureModule,
     PunchoutFeatureModule,
-    S4ServiceFeatureModule,
-    S4omFeatureModule,
-    CdsFeatureModule,
-    CdpFeatureModule,
-    CdcFeatureModule,
     SmartEditFeatureModule,
     ProductFutureStockFeatureModule,
     ProductVariantsFeatureModule,
@@ -178,12 +162,8 @@ import { ProductBulkPricingFeatureModule } from './features/product/product-bulk
       a11yKeyboardAccessibleZoom: true,
       a11yPreventCartItemsFormRedundantRecreation: true,
       a11yStoreFinderLabel: true,
-      a11yImprovedErrorMessage: true,
       a11yLinkBtnsToTertiaryBtns: true,
       a11yAddPaddingToCarouselPanel: true,
-      a11yWideScreenImprovements: true,
-      a11yOptimizedMenuSpacing: true,
-      a11yNgSelectLayering: true,
       a11yNgSelectUnicodeCarets: true,
       readMoreDirective: true,
       productReviewCharactersLeft: true,
@@ -191,7 +171,6 @@ import { ProductBulkPricingFeatureModule } from './features/product/product-bulk
       a11yConfiguratorOverviewHeaderVPC: true,
       a11yFutureStockAccordionAriaControls: true,
       enableReadDomainValuesOnDemand: true,
-      opfEnablePreventingFromCheckoutWithoutEmail: true,
       storeFinderFacadeCleanup: true,
       defaultProductPageRouteAllowsNoProductName: true,
       consistentSizeProductCards: true,
@@ -212,9 +191,22 @@ import { ProductBulkPricingFeatureModule } from './features/product/product-bulk
       enablePasswordExpiredErrorTranslation: true,
       enableQuotePurchaseOrderNumber: true,
       enableReturnOrderReturnableQuantityConsigmentFallback: true,
+      enableMediaPrefix: true,
       a11yCustomerTicketingVisualFocusFix: true,
+      a11yFacetFilterByLabel: true,
       removeDuplicatedOrderHistoryHeader: true,
       a11yCardNotificationMessage: true,
+      enableB2BUnitSearch: true,
+      enableB2BCostCenterSearch: true,
+      enableB2BCustomerSearch: true,
+      a11yCarouselPreventNavigationFocus: true,
+      a11yNgSelectReadonlyInputValue: true,
+      a11yPasswordVisibilityToggle: true,
+      showOnlyActiveCurrencies: true,
+      a11yAddedToCartDialogHeading: true,
+      a11yListSemanticsForFacets: true,
+      a11yCartItemListHideEmptyOutlets: true,
+      a11yReviewsKeyboardControls: true,
     }),
   ],
 })
